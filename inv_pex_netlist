@@ -1,0 +1,277 @@
+; DESIGN "INVERTER"
+; DATE "Fri Sep 17 21:10:36 2021"
+; VENDOR "Mentor Graphics Corp."
+; PROGRAM "Calibre xRC v2020.4_34.17"
+; CIRCUIT TEMPERATURE 25C
+; NOMINAL TEMPERATURE 25C
+;
+
+
+mgc_rve_device_template "N_12_LLLVT" "D" "G" "S" "B"
+mgc_rve_device_template "N_BPW_12_LLLVT" "D" "G" "S" "B"
+mgc_rve_device_template "P_12_LLLVT" "D" "G" "S" "B"
+mgc_rve_device_template "N_12_LLRVT" "D" "G" "S" "B"
+mgc_rve_device_template "N_BPW_12_LLRVT" "D" "G" "S" "B"
+mgc_rve_device_template "P_12_LLRVT" "D" "G" "S" "B"
+mgc_rve_device_template "N_12_LLHVT" "D" "G" "S" "B"
+mgc_rve_device_template "N_BPW_12_LLHVT" "D" "G" "S" "B"
+mgc_rve_device_template "P_12_LLHVT" "D" "G" "S" "B"
+mgc_rve_device_template "N_12_LLRVTRF" "D" "G" "S" "B"
+mgc_rve_device_template "P_12_LLRVTRF" "D" "G" "S" "B" "PSUB"
+mgc_rve_device_template "N_BPW_12_LLRVTRF" "D" "G" "S" "B" "NW" "PSUB"
+mgc_rve_device_template "N_12_LLHVTRF" "D" "G" "S" "B"
+mgc_rve_device_template "P_12_LLHVTRF" "D" "G" "S" "B" "PSUB"
+mgc_rve_device_template "N_BPW_12_LLHVTRF" "D" "G" "S" "B" "NW" "PSUB"
+mgc_rve_device_template "N_12_LLLVTRF" "D" "G" "S" "B"
+mgc_rve_device_template "P_12_LLLVTRF" "D" "G" "S" "B" "PSUB"
+mgc_rve_device_template "N_BPW_12_LLLVTRF" "D" "G" "S" "B" "NW" "PSUB"
+mgc_rve_device_template "N_25_LL" "D" "G" "S" "B"
+mgc_rve_device_template "N_BPW_25_LL" "D" "G" "S" "B"
+mgc_rve_device_template "P_25_LL" "D" "G" "S" "B"
+mgc_rve_device_template "N_25OD33_LL" "D" "G" "S" "B"
+mgc_rve_device_template "N_BPW_25OD33_LL" "D" "G" "S" "B"
+mgc_rve_device_template "P_25OD33_LL" "D" "G" "S" "B"
+mgc_rve_device_template "N_25UD18_LL" "D" "G" "S" "B"
+mgc_rve_device_template "N_BPW_25UD18_LL" "D" "G" "S" "B"
+mgc_rve_device_template "P_25UD18_LL" "D" "G" "S" "B"
+mgc_rve_device_template "N_25_LLNVT" "D" "G" "S" "B"
+mgc_rve_device_template "N_BPW_25_LLNVT" "D" "G" "S" "B"
+mgc_rve_device_template "N_25OD33_LLNVT" "D" "G" "S" "B"
+mgc_rve_device_template "N_BPW_25OD33_LLNVT" "D" "G" "S" "B"
+mgc_rve_device_template "N_25_LLRF" "D" "G" "S" "B"
+mgc_rve_device_template "P_25_LLRF" "D" "G" "S" "B" "PSUB"
+mgc_rve_device_template "N_BPW_25_LLRF" "D" "G" "S" "B" "NW" "PSUB"
+mgc_rve_device_template "N_12_LLNVT" "D" "G" "S" "B"
+mgc_rve_device_template "N_BPW_12_LLNVT" "D" "G" "S" "B"
+mgc_rve_device_template "P_L52P5_LLHVT" "D" "G" "S" "B"
+mgc_rve_device_template "N_PD52P5_LLHVT" "D" "G" "S" "B"
+mgc_rve_device_template "N_PG52P5_LLHVT" "D" "G" "S" "B"
+mgc_rve_device_template "P_L97P4_LLHVT" "D" "G" "S" "B"
+mgc_rve_device_template "N_PD97P4_LLHVT" "D" "G" "S" "B"
+mgc_rve_device_template "N_PG97P4_LLHVT" "D" "G" "S" "B"
+mgc_rve_device_template "P_L144P5CAM_LLHVT" "D" "G" "S" "B"
+mgc_rve_device_template "N_PD144P5CAM_LLHVT" "D" "G" "S" "B"
+mgc_rve_device_template "N_PG144P5CAM_LLHVT" "D" "G" "S" "B"
+mgc_rve_device_template "N_CPD144P5CAM_LLHVT" "D" "G" "S" "B"
+mgc_rve_device_template "RSNWELL_LL" "POS" "NEG" "SUB"
+mgc_rve_device_template "RNPPO_LL" "POS" "NEG" "SUB"
+mgc_rve_device_template "RNNPO_LL" "POS" "NEG" "SUB"
+mgc_rve_device_template "RNHR_LL" "POS" "NEG" "SUB"
+mgc_rve_device_template "RNND_LL" "POS" "NEG" "SUB"
+mgc_rve_device_template "RNPD_LL" "POS" "NEG" "SUB"
+mgc_rve_device_template "RSND_LL" "POS" "NEG" "SUB"
+mgc_rve_device_template "RSPD_LL" "POS" "NEG" "SUB"
+mgc_rve_device_template "RSNPO_LL" "POS" "NEG" "SUB"
+mgc_rve_device_template "RSPPO_LL" "POS" "NEG" "SUB"
+mgc_rve_device_template "RSNPO_EFUSE" "POS" "NEG"
+mgc_rve_device_template "RSPPO_EFUSE" "POS" "NEG"
+mgc_rve_device_template "RNNPO_NW_LLRF" "PLUS" "MINUS" "NW" "PSUB"
+mgc_rve_device_template "RNNPO_LLRF" "PLUS" "MINUS" "PSUB"
+mgc_rve_device_template "RNPPO_NW_LLRF" "PLUS" "MINUS" "NW" "PSUB"
+mgc_rve_device_template "RNPPO_LLRF" "PLUS" "MINUS" "PSUB"
+mgc_rve_device_template "RNHR_NW_LLRF" "PLUS" "MINUS" "NW" "PSUB"
+mgc_rve_device_template "RNHR_LLRF" "PLUS" "MINUS" "PSUB"
+mgc_rve_device_template "FUSE" "POS" "NEG"
+mgc_rve_device_template "RAL" "POS" "NEG"
+mgc_rve_device_template "RM8" "POS" "NEG"
+mgc_rve_device_template "R_2X_LL" "POS" "NEG"
+mgc_rve_device_template "R_1X_LL" "POS" "NEG"
+mgc_rve_device_template "R_M1_LL" "POS" "NEG"
+mgc_rve_device_template "VARMIS_12_LLRF" "PLUS" "MINUS" "PSUB"
+mgc_rve_device_template "VARMIS_25_LLRF" "PLUS" "MINUS" "PSUB"
+mgc_rve_device_template "VARDIOP_LLRF" "PLUS" "MINUS" "PSUB"
+mgc_rve_device_template "NCAP_12_LL" "POS" "NEG"
+mgc_rve_device_template "PCAP_12_LL" "POS" "NEG"
+mgc_rve_device_template "NCAP_25_LL" "POS" "NEG"
+mgc_rve_device_template "PCAP_25_LL" "POS" "NEG"
+mgc_rve_device_template "DION_LL" "POS" "NEG"
+mgc_rve_device_template "DIOP_LL" "POS" "NEG"
+mgc_rve_device_template "DIONW_LL" "POS" "NEG"
+mgc_rve_device_template "DIODNW_LL" "POS" "NEG"
+mgc_rve_device_template "DIODP_LL" "POS" "NEG"
+mgc_rve_device_template "DIOP_LL_A" "POS" "NEG"
+mgc_rve_device_template "DION_LL_A" "POS" "NEG"
+mgc_rve_device_template "PNP_V20X20_LL" "C" "B" "E"
+mgc_rve_device_template "PNP_V32X32_LL" "C" "B" "E"
+mgc_rve_device_template "PNP_V50X50_LL" "C" "B" "E"
+mgc_rve_device_template "PNP_V100X100_LL" "C" "B" "E"
+mgc_rve_device_template "NPN_V20X20_LL" "C" "B" "E"
+mgc_rve_device_template "NPN_V32X32_LL" "C" "B" "E"
+mgc_rve_device_template "NPN_V50X50_LL" "C" "B" "E"
+mgc_rve_device_template "NPN_V100X100_LL" "C" "B" "E"
+mgc_rve_device_template "MOMCAPS_SY_MMKF" "PLUS" "MINUS" "B"
+mgc_rve_device_template "MOMCAPS_AS_MMKF" "PLUS" "MINUS" "B"
+mgc_rve_device_template "MOMCAPS_SYMESH_MMKF" "PLUS1" "MINUS1" "PLUS2" "MINUS2" "B"
+mgc_rve_device_template "MOMCAPS_ASMESH_MMKF" "PLUS1" "MINUS1" "PLUS2" "MINUS2" "B"
+mgc_rve_device_template "MOMCAPS_ARRAY_VP3_RFVCL" "PLUS" "MINUS" "NW" "PSUB"
+mgc_rve_device_template "MOMCAPS_ARRAY_VP4_RFVCL" "PLUS" "MINUS" "NW" "PSUB"
+mgc_rve_device_template "MOMCAPS_ARRAY_VP5_RFVCL" "PLUS" "MINUS" "SUB"
+mgc_rve_device_template "L_SLCR30K_RFVIL" "PLUS" "MINUS" "PSUB"
+mgc_rve_device_template "L_SYCT30K_RFVIL" "PLUS" "MINUS" "CT" "PSUB"
+mgc_rve_device_template "L_SY30K_RFVIL" "PLUS" "MINUS" "PSUB"
+mgc_rve_device_template "L_SQSK_RFVIL" "PLUS" "MINUS" "PSUB"
+mgc_rve_device_template "MIMCAPS_20F_NWELL_RFKF" "PLUS" "MINUS" "NW" "PSUB"
+mgc_rve_device_template "MIMCAPS_20F_PSUB_RFKF" "PLUS" "MINUS" "PSUB"
+mgc_rve_device_template "MIMCAPS_20F_M1_RFKF" "PLUS" "MINUS" "PSUB"
+mgc_rve_device_template "MIMCAPS_20F_MM" "POS" "NEG"
+mgc_rve_device_template "L_SQ_TRANS_RFVIL" "P1" "P2" "S1" "S2" "PSUB"
+mgc_rve_device_template "L_SQCTIN_TRANS_RFVIL" "P1" "P2" "S1" "S2" "CTP" "PSUB"
+mgc_rve_device_template "L_SQCTOUT_TRANS_RFVIL" "P1" "P2" "S1" "S2" "CTS" "PSUB"
+mgc_rve_device_template "L_SQCTINOUT_TRANS_RFVIL" "P1" "P2" "S1" "S2" "CTP" "CTS" "PSUB"
+mgc_rve_device_template "L_OCCTOUT_TRANS_RFVIL" "P1" "P2" "S1" "S2" "CTS" "PSUB"
+mgc_rve_device_template "PAD_RF" "PLUS" "PSUB"
+mgc_rve_device_template "v" "P" "M"
+mgc_rve_device_template "f" "P" "M"
+mgc_rve_parasitic_template "c" "r" "l" "k" "h"
+
+mgc_rve_cell_start "Inverter" "IN" "OUT" "GND" "VDD"
+mr_pi "N_12_LLRVT" "MNM0" '( "MNM0_d" "MNM0_g" "MNM0_s" "MNM0_b") '( ("l" 6e-08) ("w" 2e-07) ("ad" 3.2e-14) ("as" 3.2e-14) ("pd" 7.2e-07) ("ps" 7.2e-07) ("nrd" 0) ("nrs" 0) ("sa" 1.6e-07) ("sb" 1.6e-07) ("sca" 76.2203) ("scb" 0.0348763) ("scc" 0.0105484) ("lpe" 3) ) '(0.865 0.325)
+mr_pi "P_12_LLRVT" "MPM0" '( "MPM0_d" "MPM0_g" "MPM0_s" "MPM0_b") '( ("l" 6e-08) ("w" 4e-07) ("ad" 6.4e-14) ("as" 6.4e-14) ("pd" 1.12e-06) ("ps" 1.12e-06) ("nrd" 0) ("nrs" 0) ("sa" 1.6e-07) ("sb" 1.6e-07) ("sca" 80.797) ("scb" 0.076468) ("scc" 0.00910237) ("lpe" 3) ) '(0.865 0.835)
+
+mr_ni "IN" 145.606 2.88067e-16 2.98259e-16 '( "MNM0_g" "MPM0_g" )
+mr_pp 'c "ciIN_40" '("c_9_p" "0") 0.0146034f
+mr_pp 'c "ciIN_41" '("c_5_p" "0") 0.195327f
+mr_pp 'c "ciIN_42" '("c_4_p" "0") 2.07363e-19
+mr_pp 'c "ciIN_43" '("c_40_p" "0") 0.00237233f
+mr_pp 'c "ciIN_44" '("c_3_p" "0") 0.0220042f
+mr_pp 'c "ciIN_45" '("c_13_p" "0") 5.31859e-19
+mr_pp 'c "ciIN_46" '("c_23_p" "0") 0.00746941f
+mr_pp 'c "ciIN_47" '("c_2_p" "0") 0.00284233f
+mr_pp 'c "ciIN_48" '("c_19_p" "0") 2.59726e-19
+mr_pp 'c "ciIN_49" '("c_11_p" "0") 0.00374409f
+mr_pp 'c "ciIN_50" '("MPM0_g" "0") 0.0219945f
+mr_pp 'c "ciIN_51" '("c_6_p" "0") 0.0167109f
+mr_pp 'r "rIN_52" '("c_5_p" "c_9_p") 2
+mr_pp 'r "rIN_53" '("IN" "c_5_p") 2.1675
+mr_pp 'r "rIN_54" '("c_40_p" "c_4_p") 0.0094878
+mr_pp 'r "rIN_55" '("c_13_p" "c_40_p") 0.0404
+mr_pp 'r "rIN_56" '("c_13_p" "c_3_p") 30
+mr_pp 'r "rIN_57" '("c_2_p" "c_23_p") 0.336901
+mr_pp 'r "rIN_58" '("c_19_p" "c_4_p") 0.0212773
+mr_pp 'r "rIN_59" '("c_19_p" "c_2_p") 0.219889
+mr_pp 'r "rIN_60" '("c_11_p" "c_9_p") 0.0402796
+mr_pp 'r "rIN_61" '("c_11_p" "c_23_p") 0.117545
+mr_pp 'r "rIN_62" '("IN_8" "c_3_p") 11.3264
+mr_pp 'r "rIN_63" '("IN_8" "MPM0_g") 57
+mr_pp 'r "rIN_64" '("c_6_p" "c_3_p") 11.3264
+mr_pp 'r "rIN_65" '("c_6_p" "MNM0_g") 31
+
+
+mr_ni "OUT" 70.8826 6.66067e-16 3.48144e-16 '( "MNM0_d" "MPM0_d" )
+mr_pp 'c "ciOUT_35" '("c_66_n" "0") 0.0059012f
+mr_pp 'c "ciOUT_36" '("c_65_n" "0") 0.00896778f
+mr_pp 'c "ciOUT_37" '("c_64_n" "0") 0.015819f
+mr_pp 'c "ciOUT_38" '("c_63_n" "0") 0.0167531f
+mr_pp 'c "ciOUT_39" '("c_58_n" "0") 9.78481e-19
+mr_pp 'c "ciOUT_40" '("c_57_n" "0") 0.36976f
+mr_pp 'c "ciOUT_41" '("c_50_n" "0") 0.197624f
+mr_pp 'c "ciOUT_42" '("c_46_n" "0") 0.0379539f
+mr_pp 'c "ciOUT_43" '("OUT_3" "0") 0.0011639f
+mr_pp 'c "ciOUT_44" '("c_41_n" "0") 0.0111456f
+mr_pp 'r "rOUT_45" '("c_65_n" "c_66_n") 0.0646084
+mr_pp 'r "rOUT_46" '("c_64_n" "c_66_n") 0.0656505
+mr_pp 'r "rOUT_47" '("OUT_36" "c_64_n") 2
+mr_pp 'r "rOUT_48" '("OUT_31" "c_63_n") 2
+mr_pp 'r "rOUT_49" '("c_58_n" "c_63_n") 0.231278
+mr_pp 'r "rOUT_50" '("c_58_n" "OUT_24") 35
+mr_pp 'r "rOUT_51" '("MNM0_d" "OUT_24") 5.5
+mr_pp 'r "rOUT_52" '("c_57_n" "OUT_36") 0.573
+mr_pp 'r "rOUT_53" '("OUT_15" "c_57_n") 2
+mr_pp 'r "rOUT_54" '("OUT" "OUT_15") 0.27391
+mr_pp 'r "rOUT_55" '("c_50_n" "OUT_31") 0.8055
+mr_pp 'r "rOUT_56" '("c_46_n" "OUT") 0.27209
+mr_pp 'r "rOUT_57" '("c_46_n" "c_50_n") 2
+mr_pp 'r "rOUT_58" '("OUT_6" "c_65_n") 0.192682
+mr_pp 'r "rOUT_59" '("OUT_5" "OUT_6") 0.0500535
+mr_pp 'r "rOUT_60" '("OUT_3" "MPM0_d") 2.25
+mr_pp 'r "rOUT_61" '("c_41_n" "OUT_5") 0.10383
+mr_pp 'r "rOUT_62" '("c_41_n" "OUT_3") 17.5
+
+
+mr_ni "GND" 74.0731 2.96767e-16 4.61608e-17 '( "MNM0_b" "MNM0_s" )
+mr_pp 'c "ciGND_13" '("c_80_n" "0") 0.0568773f
+mr_pp 'c "ciGND_14" '("GND_18" "0") 0.237407f
+mr_pp 'c "ciGND_15" '("c_79_n" "0") 0.00100462f
+mr_pp 'c "ciGND_16" '("c_76_n" "0") 0.00147821f
+mr_pp 'r "rGND_17" '("c_80_n" "GND_23") 17.5
+mr_pp 'r "rGND_18" '("GND_18" "c_80_n") 2
+mr_pp 'r "rGND_19" '("GND" "GND_18") 0.764627
+mr_pp 'r "rGND_20" '("GND_8" "c_79_n") 0.0363983
+mr_pp 'r "rGND_21" '("GND_7" "MNM0_s") 5.5
+mr_pp 'r "rGND_22" '("c_76_n" "c_79_n") 0.037382
+mr_pp 'r "rGND_23" '("c_76_n" "GND_7") 35
+mr_pp 'r "rGND_24" '("GND_4" "c_80_n") 0.00576892
+mr_pp 'r "rGND_25" '("GND_4" "GND_8") 0.228933
+mr_pp 'r "rGND_26" '("MNM0_b" "GND_23") 13
+
+
+mr_ni "VDD" 56.5458 3.04618e-16 6.6098e-17 '( "MPM0_b" "MPM0_s" )
+mr_pp 'c "ciVDD_14" '("MPM0_s" "0") 5.18227e-19
+mr_pp 'c "ciVDD_15" '("c_93_n" "0") 0.0550641f
+mr_pp 'c "ciVDD_16" '("VDD_22" "0") 0.237186f
+mr_pp 'c "ciVDD_17" '("c_98_n" "0") 0.00263728f
+mr_pp 'c "ciVDD_18" '("c_89_n" "0") 0.00921196f
+mr_pp 'r "rVDD_19" '("c_93_n" "VDD_30") 17.5
+mr_pp 'r "rVDD_20" '("VDD_22" "c_93_n") 2.1164
+mr_pp 'r "rVDD_21" '("VDD" "VDD_22") 0.787282
+mr_pp 'r "rVDD_22" '("VDD_12" "c_93_n") 0.0187078
+mr_pp 'r "rVDD_23" '("c_98_n" "VDD_12") 0.24
+mr_pp 'r "rVDD_24" '("VDD_9" "MPM0_s") 2.25
+mr_pp 'r "rVDD_25" '("c_89_n" "VDD_9") 17.5
+mr_pp 'r "rVDD_26" '("VDD_6" "c_98_n") 0.096156
+mr_pp 'r "rVDD_27" '("VDD_6" "c_89_n") 0.148329
+mr_pp 'r "rVDD_28" '("MPM0_b" "VDD_30") 15.8889
+
+mr_pp 'c "cc_1" '("MPM0_g" "c_41_n") 0.00445038f
+mr_pp 'c "cc_2" '("c_2_p" "c_41_n") 0.00678043f
+mr_pp 'c "cc_3" '("c_3_p" "c_41_n") 5.95342e-19
+mr_pp 'c "cc_4" '("c_4_p" "c_41_n") 0.00123391f
+mr_pp 'c "cc_5" '("c_5_p" "c_41_n") 0.00140975f
+mr_pp 'c "cc_6" '("c_6_p" "c_46_n") 5.51421e-19
+mr_pp 'c "cc_7" '("MPM0_g" "c_46_n") 3.90425e-19
+mr_pp 'c "cc_8" '("c_5_p" "c_46_n") 0.0101305f
+mr_pp 'c "cc_9" '("c_9_p" "c_46_n") 0.00222127f
+mr_pp 'c "cc_10" '("c_6_p" "c_50_n") 0.0030857f
+mr_pp 'c "cc_11" '("c_11_p" "c_50_n") 0.00246793f
+mr_pp 'c "cc_12" '("c_2_p" "c_50_n") 0.00271469f
+mr_pp 'c "cc_13" '("c_13_p" "c_50_n") 0.0013296f
+mr_pp 'c "cc_14" '("c_3_p" "c_50_n") 0.0011582f
+mr_pp 'c "cc_15" '("c_5_p" "c_50_n") 0.177083f
+mr_pp 'c "cc_16" '("c_9_p" "c_50_n") 0.00377476f
+mr_pp 'c "cc_17" '("MPM0_g" "c_57_n") 0.00315586f
+mr_pp 'c "cc_18" '("c_6_p" "c_58_n") 0.00244086f
+mr_pp 'c "cc_19" '("c_19_p" "c_58_n") 0.00166159f
+mr_pp 'c "cc_20" '("c_2_p" "c_58_n") 0.0150009f
+mr_pp 'c "cc_21" '("c_3_p" "c_58_n") 3.76817e-19
+mr_pp 'c "cc_22" '("c_5_p" "c_58_n") 0.00288469f
+mr_pp 'c "cc_23" '("c_23_p" "c_63_n") 0.0150009f
+mr_pp 'c "cc_24" '("c_9_p" "c_64_n") 0.00128892f
+mr_pp 'c "cc_25" '("c_23_p" "c_65_n") 0.00424333f
+mr_pp 'c "cc_26" '("c_11_p" "c_66_n") 0.00424333f
+mr_pp 'c "cc_27" '("c_13_p" "c_76_n") 0.00130246f
+mr_pp 'c "cc_28" '("c_3_p" "c_76_n") 5.42797e-19
+mr_pp 'c "cc_29" '("c_5_p" "c_76_n") 0.00155058f
+mr_pp 'c "cc_30" '("c_6_p" "c_79_n") 0.00188772f
+mr_pp 'c "cc_31" '("c_6_p" "c_80_n") 0.00588878f
+mr_pp 'c "cc_32" '("c_13_p" "c_80_n") 8.95175e-19
+mr_pp 'c "cc_33" '("c_3_p" "c_80_n") 6.69814e-19
+mr_pp 'c "cc_34" '("MPM0_g" "c_89_n") 0.00444848f
+mr_pp 'c "cc_35" '("c_13_p" "c_89_n") 0.00124912f
+mr_pp 'c "cc_36" '("c_3_p" "c_89_n") 6.38842e-19
+mr_pp 'c "cc_37" '("c_5_p" "c_89_n") 0.00149227f
+mr_pp 'c "cc_38" '("MPM0_g" "c_93_n") 0.00724973f
+mr_pp 'c "cc_39" '("c_3_p" "c_93_n") 3.71035e-19
+mr_pp 'c "cc_40" '("c_40_p" "c_93_n") 3.98402e-19
+mr_pp 'c "cc_41" '("c_50_n" "c_76_n") 0.00951801f
+mr_pp 'c "cc_42" '("c_58_n" "c_79_n") 0.0110916f
+mr_pp 'c "cc_43" '("c_58_n" "c_80_n") 0.00937295f
+mr_pp 'c "cc_44" '("c_50_n" "MNM0_s") 8.39193e-19
+mr_pp 'c "cc_45" '("c_41_n" "c_89_n") 0.0268354f
+mr_pp 'c "cc_46" '("c_57_n" "c_89_n") 0.00909946f
+mr_pp 'c "cc_47" '("c_57_n" "c_98_n") 0.00227506f
+mr_pp 'c "cc_48" '("c_41_n" "c_93_n") 0.00518941f
+mr_pp 'c "cc_49" '("c_65_n" "c_93_n") 0.00424894f
+mr_pp 'c "cc_50" '("c_76_n" "c_89_n") 0.00234398f
+mr_pp 'c "cc_51" '("c_80_n" "c_93_n") 2.5779e-19
+mgc_rve_cell_end
+
